@@ -1,0 +1,138 @@
+.main {
+
+	&__content {
+		background: @white;
+
+		.container {
+			border-bottom: 2px dotted #d5d5d5; 
+		}
+
+	}
+}
+
+.sidebar {
+	.arial();
+	color: @text;
+	border-right: 2px dotted #d5d5d5;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__block {	
+		border-bottom: 2px dotted #d5d5d5;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&__title {
+		.font();
+		text-transform: uppercase;
+		color: @blue;
+		font-size: 2rem;
+
+		&--author {
+			margin-bottom: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		&--post {
+			margin-bottom: 1.4rem;
+		}
+
+		&--currency {
+			margin-bottom: 1rem;
+			margin-top: 7px;
+		}
+
+	}
+
+	&__content {
+		font-size: 1rem;
+		color: @text;
+		
+		line-height: 1.8rem;
+		padding-right: 2.4rem;
+
+		span {
+			font-weight: bold;
+			color: @blue;
+		}
+	}
+
+}
+
+
+.post {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		flex-basis: 100%;
+		margin-bottom: 1rem;
+	}
+
+	&__pic {
+		float: left;
+	}
+
+	&__title {
+		padding-right: 3rem;
+		float: right;
+		text-transform: uppercase;
+		.bold();
+		font-size: 10px;
+	}
+
+	&__comment {
+		display: inline-block;
+		color: @text;
+		text-align: center;
+		font-style: italic;
+		font-size: 1.2rem;
+		padding-left: 13px;
+		margin-top: -7px;
+
+		&:hover {
+			color: @text-bold;
+		}
+	}
+
+	&__icon {
+		color: @icon-color;
+	}
+}
+
+/* Table */
+
+.table {
+	font-size: 10px;
+	text-align: center;
+	border: 1px solid black;
+
+    
+
+	&__header {
+		background: @blue;
+		color: @white;
+		padding: 6px 5px 4px 8px;
+		border: 1px solid @white;
+
+	}
+
+	&__data {
+		color: @blue;
+		padding: 3px 8px 1px 7px;
+		border: 1px solid @white;
+		background: #c7e9fa;
+
+		&--colored {
+			background: #b1e1f8;
+		}
+	}
+}

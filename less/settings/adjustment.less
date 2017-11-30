@@ -1,0 +1,94 @@
+/* vars */
+
+@white: #ffffff;
+@blue: #076e9f;
+@light-blue:#22aaec;
+@light-gray: #d4d4d4;
+@text: #707070;
+@text-bold:#515151;
+@bg:#90d4f5;
+@post-bg: #eaeaea;
+@icon-color: #dddddd;
+
+
+/* mixins */
+
+.trs(){
+	transition: all .5s;
+}
+
+.trf(){
+	transform: translateY(-3px);
+}
+
+.hex-to-rgba (@color, @alpha: 1) {
+	@hex-to-rgba-red: red(@color);
+	@hex-to-rgba-green: green(@color);
+	@hex-to-rgba-blue: blue(@color);
+	@rgba: rgba(@hex-to-rgba-red, @hex-to-rgba-green, @hex-to-rgba-blue, @alpha);
+}
+
+
+/* base-settings */
+
+.font(){
+	font-family: 'League Gothic';
+	font-weight: normal;
+    font-style: normal;
+
+}
+
+.arial() {
+	font-family: "Arial MT";
+}
+
+.bold(){
+	font-family: "Arial - Bold MT";
+	font-weight: 700;
+}
+
+html{
+	font-size: 10px;
+	min-height: 100%;
+}
+
+body {
+	.font();
+	background: @white;
+	line-height: 1.8rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {	
+	display: block;
+	text-decoration: none;
+	line-height: 1.8rem;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+p {
+	margin: 0;
+	padding: 0;
+}
